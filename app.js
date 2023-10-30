@@ -1,6 +1,6 @@
-const os = require('os');
+const _ = require('lodash');
 
-//info about current user
+const items = [1,[2,[3,[4]]]];
 
-const user = os.userInfo();
-console.log(user);
+const newItems = _.flattenDeep(items);
+console.log(newItems);
